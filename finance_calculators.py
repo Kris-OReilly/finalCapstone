@@ -26,12 +26,14 @@ if options.lower() == "investment":
 # An error message will appear if simple or compound is not entered
 
     interest = input(" Enter 'simple' or 'compound' for your chosen interest type: ")
+
     if interest.lower() == "simple":
         print(f"Your return on £{deposit} investment, at {interest_rate*100}% interest over {investment_years} years will be: £{simple_interest:.2f} ")  
     elif interest.lower() == "compound":
         print(f"Your return on £{deposit} investment, at {interest_rate*100}% interest over {investment_years} years will be: £{compound_interest:.2f} ")
     else:
         print(" ~ ERROR ~ you entered an invalid interest option")
+
 
 # If the user chooses bond they will be asked to input the current house value, the interest rate
 # and the number of months the plan will take to repay
